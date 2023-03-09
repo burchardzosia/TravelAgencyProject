@@ -1,0 +1,17 @@
+button{
+    padding:10px;
+    background-color: blue;
+}
+.main{
+    text-align: center;
+    align-items: center;
+}
+.container{
+    text-align: center;
+    background-color: rgb(210, 145, 233);
+    width:fit-content;
+    font-size: 20px;
+    margin:30px;
+    padding: 30px;
+    border-radius: 10px;
+}

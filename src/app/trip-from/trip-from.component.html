@@ -1,0 +1,89 @@
+
+
+<div class="container">
+  <div class="header">LISTA AKTULANIE WYŚWIETLANYCH WYCIECZEK</div>
+  <div  class="wycieczka"*ngFor="let trip of tablicaSerwe">
+    <div class="name">{{trip.name}}</div>
+      <div class="actual">Zaktualizuj</div>
+      <form  [formGroup]="changeForm">
+        <div class="item">
+          <label >Ilość wycieczek:</label>
+          <input  type="text" formControlName="max" />
+        </div>
+
+        <div class="item">
+          <label >Cena wycieczka</label>
+          <input  type="text" formControlName="price" />
+        </div>
+
+        <div class="item">
+          <label >Opis:</label>
+          <input  type="text" formControlName="description" />
+        </div>
+      </form>
+      <div class="przycisk">
+        <button class="button"(click)="submit2(trip)">Zmień</button>
+      </div>
+      <div class="usun">
+        <button class="button" (click)="usun(trip)">Usuń wycieczkę</button>
+      </div>
+      
+    </div>
+  
+    
+    <div class="content">
+      <h1>Dodaj nową wycieczkę!</h1>
+      <form  [formGroup]="TripForm">
+        <div class="item">
+          <label >Nazwa wycieczki:</label>
+          <input  type="text" formControlName="name" />
+        </div>
+  
+        <div class="item">
+          <label >Nazwa kraju:</label>
+          <input  type="text" formControlName="country" />
+        </div>
+      
+        <div class="item">
+          <label >Data rozpoczęcia:</label>
+          <input  type="text" formControlName="startDate" />
+        </div>
+      
+        <div class="item">
+          <label >Data końca:</label>
+          <input  type="text" formControlName="endDate" />
+        </div>
+      
+        <div class="item">
+          <label >Ilość wycieczek:</label>
+          <input  type="text" formControlName="max" />
+        </div>
+      
+        <div class="item">
+          <label >Cena:</label>
+          <input  type="text" formControlName="price" />
+        </div>
+      
+        <div class="item">
+          <label >Opis:</label>
+          <input  type="text" formControlName="description" />
+        </div>
+        <div class="item">
+          <label >zdjęcia:</label>
+          <input  type="text" formControlName="image" />
+        </div>
+      
+        <div class="item">
+          <label >Ścieżka do zdj:</label>
+          <input  type="text" formControlName="linkphoto" />
+        </div>
+      
+        <button class="button" (click)="submit()">Dodaj</button>
+        <p *ngIf="flag">ERROR, żle wpisane dane</p>
+      
+     </form> 
+  
+    </div>
+    
+  </div>
+  

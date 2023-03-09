@@ -1,0 +1,25 @@
+#opiniontext{
+    margin-top: 20px;
+    margin-left: 10px;
+   
+}
+.container{
+    background-color: blue;
+    padding: 25px;
+    border-radius: 20%;
+    width: fit-content;
+}
+label{
+    font-size: 30px;
+    color: rgb(223, 201, 244);
+    margin: 10px;
+}
+button{
+    margin-left: 10px;
+    background-color: pink;
+    border-radius: 10%;
+}
+.container{
+    text-align: center;
+    align-items: center;
+}

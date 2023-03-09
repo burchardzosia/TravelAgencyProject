@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="header">Witaj W koszyku:</div>
+    <div class="value"> Wartość koszyka:{{this.us.suma}}$</div>
+    <div class="value"[ngClass]="{
+        'info_trip': this.TripService.liczba<10,
+        'info_trip2': this.TripService.liczba>=10
+      }" class="info_trip">Zarezerwowano {{this.us.liczba}} wycieczki</div>
+    <div class="header">Lista zarezerwowamych wycieczek:</div>
+    <div *ngFor="let cartposition of cart">
+    <div>
+        {{cartposition.trip.name | uppercase}}
+        ilość:
+        {{cartposition.number}}
+        <button (click)="buy(cartposition)">KUP</button>
+    </div>
+    <div>
+
+</div>

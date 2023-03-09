@@ -1,0 +1,49 @@
+<div class="nav">
+    <div class="buttons">
+        <button class="button" routerLink="/home" >Home</button>
+        <button class="button" routerLink="/trip" >Wycieczki</button>
+        <button *ngIf="this.us.id !== '' "class="button" routerLink="/cart" >Koszyk</button>
+        <button  *ngIf="this.us.isManager() || isAdmin()" class="button" routerLink="/form" >MenagerView</button>
+        <button *ngIf="this.us.id !== ''"  class="button" routerLink="/buycard" >Kupione</button>
+        <button *ngIf="isAdmin()" class="button" routerLink="/admin" >AdminView</button>
+  
+        
+    </div>
+    <div class="koszyk">
+
+      
+        
+        <img  class="imageitem"src="../../assets/photos/cart.png" alt="">
+        <div class="number">{{this.us.suma}}$</div>
+        <div class="number">Ilość</div>
+        <div class="number">{{this.us.liczba}}</div>
+        <div class="imageitem">
+            <img  src="../../assets/photos/avatar.png" alt="">
+        </div>
+        <div class="nick" *ngIf="this.us.id !== ''" >
+            {{this.us.nick}}
+        </div>
+        <div class="login">
+            <button *ngIf="this.us.id == ''" routerLink="/login" routerLinkActive="active">LogIN
+            </button>
+            <button *ngIf="this.us.id !== ''"(click)="logout()" >
+                 LogOut
+            </button>
+        </div>
+        <img *ngIf="this.serviceTrip.flag2" class="imageitem"src="../../assets/photos/notify.png" alt="">
+        
+        
+    
+        
+        
+    </div>
+  
+        
+   
+
+</div>
+
+
+
+
+

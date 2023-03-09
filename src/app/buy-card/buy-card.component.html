@@ -1,0 +1,16 @@
+<button (click)="archiwum()">WYCIECZKI ODBYTE</button>
+<button (click)="actual()">WYCIECZKI AKTUALNE</button>
+<button (click)="future()">WYCIECZKI NADCHODZĄCE</button>
+<button (click)="every()">WSZYSTKIE WYCIECZKI</button>
+<div class="main">
+<div *ngFor="let tripbuy of table">
+    <div class="container">
+        <div>Ilość zakupioinych wycieczek:  {{tripbuy.number}}</div>
+        <div>Data zakupu:  {{tripbuy.date}}</div>
+        <div>Start: {{tripbuy.trip.startDate}}</div>
+        <div>Koniec:  {{tripbuy.trip.endDate}}</div>
+        <div>Cena wycieczki: {{tripbuy.trip.price}}$</div>
+        <div>Lokalizacja: {{tripbuy.trip.country}}</div>
+    </div>   
+</div>
+</div>

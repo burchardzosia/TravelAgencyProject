@@ -1,0 +1,73 @@
+.container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+   
+    
+}
+.content{
+    margin-top: 30px;
+    background-color: blue;
+    align-items: center;
+    text-align: center;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.item{
+    margin-top: 30px;
+    gap:60px;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    
+}
+.button{
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+.header{
+    font-size: 30px;
+    color:blueviolet
+}
+.name{
+    text-align: center;
+    color: brown;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.przycisk{
+    text-align: center;
+    
+}
+.wycieczka{
+    margin-top: 30px;
+    background-color: rgb(28, 140, 244);
+    border-radius: 20px;
+}
+.usun{
+    text-align: center;
+}
+.actual{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(220, 170, 215);
+    font-weight: bold;
+    margin: 10px;
+}
+
+.button{
+    padding:10px;
+    font-size:20px;
+    border-radius: 20px;
+    color: rgb(246, 136, 154);
+
+
+}

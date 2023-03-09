@@ -1,0 +1,124 @@
+{
+  "Trips":  [{
+        "name":"Niesamowita Grecja",
+        "country":"Grecja",
+        "startDate":"02.05.2022",
+        "endDate":"11.05.2022",
+        "price":"500",
+        "max":"10",
+        "desciption":"Przeżyj niezapomniane chwilę na jednej z greckich wysp",
+        "image":"./../assets/photos/Polska.jpg",
+        "linkphoto":["./../assets/photos/Polska.jpg","./../assets/photos/polska2.jpg"]
+        
+    },
+    {
+        "name":"Kolorowy Egipt",
+        "country":"Egipt",
+        "startDate":"16.10.2022",
+        "endDate":"20.12.2022",
+        "price":"400",
+        "max":"7",
+        "desciption":"Zobacz piramidy z bliska!",
+        "image":"./../assets/photos/egipt.jpg",
+        "linkphoto":"https://www.polska.travel/pl"
+    
+    },
+
+    {
+        "name":"Piękna Polska",
+        "country":"Polska",
+        "startDate":"02.09.2023",
+        "endDate":"09.09.2023",
+        "price":"200",
+        "max":"20",
+        "desciption":"Zobacz z nami te piękne zabytki",
+        "image":"./../assets/photos/polska2.jpg",
+        "linkphoto":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.polska.travel%2Fpl%2Fglowne-miasta%2Fwroclaw&psig=AOvVaw1QYzYkYPLyr7z-7kpyDPCa&ust=1669599236756000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIDdyf2bzfsCFQAAAAAdAAAAABAE"
+    },
+
+    {
+        "name":"Gorący Cypr",
+        "country":"Cypr",
+        "startDate":"02.07.2023",
+        "endDate":"10.07.2023",
+        "price":"800",
+        "max":"7",
+        "desciption":"Najpiekniejsze plaże znajdziesz właśnie tutaj",
+        "image":"./../assets/photos/cypr.jpg",
+        "linkphoto":"https://www.travelplanet.pl/wakacje/cypr/"
+
+    },
+
+    {
+        "name":"Daleki Wietnam",
+        "country":"Wietnam",
+        "startDate":"07.06.2023",
+        "endDate":"09.07.2023",
+        "price":"2000",
+        "max":"5",
+        "desciption":"Poznaj i zasmakuj z nami kultury Wietnamu",
+        "image":"./../assets/photos/vietnam.jpg",
+        "linkphoto":"https://www.lonelyplanet.com/vietnam"
+    },
+
+    {
+        "name":"Romantyczna Francja",
+        "country":"Francja",
+        "startDate":"10.05.2023",
+        "endDate":"28.05.2023",
+        "price":"800",
+        "max":"30",
+        "desciption":"Zakochaj sie we Francji",
+        "image":"./../assets/photos/france.jpg",
+        "linkphoto":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.polska.travel%2Fpl%2Fglowne-miasta%2Fwroclaw&psig=AOvVaw1QYzYkYPLyr7z-7kpyDPCa&ust=1669599236756000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIDdyf2bzfsCFQAAAAAdAAAAABAE"
+    },
+    {
+        "name":"Cudowne Włochy",
+        "country":"Włochy",
+        "startDate":"09.03.2023",
+        "endDate":"18.03.2023",
+        "price":"300",
+        "max":"10",
+        "desciption":"Zjedz z nami prawdziwą Carbonarę",
+        "image":"./../assets/photos/wlochy.jpg",
+        "linkphoto":"https://www.travelplanet.pl/wakacje/wlochy/"
+    },
+
+    {
+        "name":"Zaskakująca Słowacja",
+        "country":"Słowacja",
+        "startDate":"04.01.2023",
+        "endDate":"09.01.2023",
+        "price":"700",
+        "max":"17",
+        "desciption":"Urocza Słowacja czeka na Ciebie",
+        "image":"./../assets/photos/slowacja.jpg",
+        "linkphoto":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.polska.travel%2Fpl%2Fglowne-miasta%2Fwroclaw&psig=AOvVaw1QYzYkYPLyr7z-7kpyDPCa&ust=1669599236756000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIDdyf2bzfsCFQAAAAAdAAAAABAE"
+    },
+    {
+        "name":"Kusząca Hiszpania",
+        "country":"Hiszpania",
+        "startDate":"12.08.2023",
+        "endDate":"19.08.2023",
+        "price":"1000",
+        "max":"10",
+        "desciption":"Hiszpańskie plaże mogą być Twoje",
+        "image":"./../assets/photos/spain.jpeg",
+        "linkphoto":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.polska.travel%2Fpl%2Fglowne-miasta%2Fwroclaw&psig=AOvVaw1QYzYkYPLyr7z-7kpyDPCa&ust=1669599236756000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIDdyf2bzfsCFQAAAAAdAAAAABAE"
+    },
+    {
+        "name":"Snieżna Norwegia",
+        "country":"Norwegia",
+        "startDate":"02.05.2023",
+        "endDate":"09.05.2023",
+        "price":"2000",
+        "max":"20",
+        "desciption":"Ulep bałwana w Maju",
+        "image":"./../assets/photos/norwegia.jpg",
+        "linkphoto":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.polska.travel%2Fpl%2Fglowne-miasta%2Fwroclaw&psig=AOvVaw1QYzYkYPLyr7z-7kpyDPCa&ust=1669599236756000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIDdyf2bzfsCFQAAAAAdAAAAABAE"
+    }
+ 
+]
+    
+    
+}

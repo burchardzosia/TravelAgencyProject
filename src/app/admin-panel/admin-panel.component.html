@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="text">Aktualne ustawienia Perystancji: {{this.us.persistenceSetting}}</div>
+    <div class="text">Zmen perystancję</div>
+    <div class="buttons">
+        <button class="click" (click)="local()">LOCAL</button>
+        <button class="click"(click)="session()">SESSION</button>
+        <button  class="click"(click)="none()">NONE</button>
+    </div>
+    <div class="list">Lista zarejesestrowanych użytkowników:</div>
+    <div class="mailcontainer" *ngFor="let mail of tablicaSerwe">
+        <div class="mail">{{mail}}</div>
+        
+        <div class="role">Role użytkownika</div>
+        <div  class="lista"*ngIf="this.us.isAdminforAdmin(mail)">Admin</div>
+        <div class="lista"  *ngIf="this.us.ismanagerforAdmin(mail)">Menager</div>
+        <div class="lista" *ngIf="this.us.isbannedforAdmin(mail)">Zbanowany</div>
+        <div clsas="buttons">
+            <button class="click" *ngIf="!this.us.isbannedforAdmin(mail)"(click)="this.us.banned(mail)">Zbanuj</button>
+            <button class="click" *ngIf="!this.us.isAdminforAdmin(mail)"(click)="this.us.makeAdmin(mail)">Nadaj Admina</button>
+            <button class="click" *ngIf="!this.us.ismanagerforAdmin(mail)"(click)="this.us.makeManager(mail)">Nadaj Menagera</button>
+        </div>
+
+    </div>
+    
+
+</div>
+
+
+

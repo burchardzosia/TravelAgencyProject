@@ -1,0 +1,69 @@
+
+.buttons {
+    overflow: hidden;
+    background-color:#4d406c;
+  }
+  
+.button  {
+    float: left;
+    color:#4d406c;
+    text-align: center;
+    padding-bottom: 18px ;
+    padding-top: 17px;
+    text-decoration: none;
+    font-size: 23px;
+  }
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: #4d406c;
+
+}
+
+
+button:hover, .special:hover{
+    background-color: rgb(71, 59, 83);
+}  
+.button{
+   
+    color: blueviolet;
+}
+.koszyk{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    color: blueviolet;
+    gap:20px;
+    
+    
+
+}
+.number{
+    font-size: 50px;
+}
+.nick{
+    margin-top: 10px;
+}
+.login{
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+    .nav{
+        flex-direction: column;
+        display: column;
+        font-size: 10px;
+    }
+    .number,.nick{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+}

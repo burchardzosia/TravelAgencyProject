@@ -1,0 +1,131 @@
+.tripCard{
+    background-color: rgb(96, 23, 23);
+    flex-direction: column;
+    display: flex;
+    width: 650px;
+    box-shadow: 0 0 12px #ccc;
+    border-radius: 20px 20px; 
+    height: fit-content;
+    margin-top:10px;
+    position: relative;
+    background-color: rgb(43, 61, 85);
+    align-items: center;
+   
+
+
+
+}
+.prise{
+    font-size: 50px;
+    color: blueviolet;
+}
+.money{
+    background-color: blue;
+    border-radius: 20%;
+    color: aliceblue;
+
+}
+.link{
+    font-size: 30px;
+    color: rgb(52, 163, 214);
+}
+.description{
+    color:rgb(226, 43, 98);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.image_trip{
+    margin-bottom: 30px;
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+  
+}
+.name{
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(180, 25, 32);
+}
+.country{
+    font-size: 40px;
+    color: rgb(160, 151, 25);
+}
+.date{
+    font-size: 30px;
+    color: rgb(171, 226, 43);
+}
+.cost{
+    display: flex;
+    gap:20px;
+}
+.add-remove{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+  
+}
+.lowest{
+    border: 3px solid darkred;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .card{
+        width:20vw;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .card{
+        width:30vw;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .card{
+        width:45vw;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .container{
+        flex-direction: column;
+    }
+    .card{
+        width:auto;
+    }
+
+
+}
+.minus{
+    width:90px;
+    font-size: 60px;
+    border-radius: 50%;
+    background-color: rgb(223, 60, 60);
+    text-align: center;
+    
+}
+.plus{
+    width:90px;
+    font-size: 60px;
+    border-radius: 20%;
+    background-color: greenyellow;
+    text-align: center;
+    
+}
+.expensive{
+    border:3px solid rgb(16, 202, 109);
+}
+.cheep{
+    border:3px solid rgb(241, 13, 13);
+}
+.delate{
+    background-color: rgb(179, 16, 43);
+    margin-top: 20px;
+    margin-left:100px;
+}

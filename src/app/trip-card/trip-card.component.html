@@ -1,0 +1,37 @@
+
+  <div [ngClass]="{
+    'expensive': trip.price == getHeigh(),
+    'cheep': trip.price == getLow()
+  }"  class="tripCard" [ngStyle]="{
+    'background-color': maxBuy-counter > 3 ? 'blue' : 'orange'
+  }">
+      <h1 *ngIf="maxBuy-counter!=0">Pozostało {{maxBuy-counter}} wycieczek</h1>
+      <h1 *ngIf="maxBuy-counter==0">Wycieczka Wyprzedana</h1>
+      <h1></h1>
+      
+      <div class="image">
+        <a class="image"routerLink="/trip/{{trip.name}}"><img class="image_trip"src="{{trip.image}}" alt="{{ trip.name }}" /></a>
+      </div>
+
+      <div class="name">{{trip.name | uppercase }}</div>
+      <div class="country"> {{trip.country |uppercase}}</div>
+      <div class="date">Termin: {{trip.startDate}}-{{trip.endDate}}</div>
+      <div class="cost">
+        <span class="prise">{{price | number: '1.0-0' }}{{mark}}</span>
+        <button class="money" (click)="change()">Change </button>
+      </div>
+      <div class="description">{{trip.description}}</div>
+      <a class="link"  href="{{trip.linkphoto}}">WIĘCEJ ZDJĘĆ</a>
+   
+    
+      <div *ngIf="information" class="add-remove">
+        <div *ngIf="iszalogowany() && counter < maxBuy"class="plus" (click)="addToCart()">+
+        
+        </div>
+        <div *ngIf="counter!=0" class="minus" (click)="RemoveFromCart()">-</div>
+      </div>
+      
+  </div>
+
+  
+  

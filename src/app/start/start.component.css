@@ -1,0 +1,49 @@
+.logo{
+    background-color: rgb(215, 32, 32);
+    background-image: url("../../assets/photos/travel.png");
+    width: 450px;
+    height:450px;
+    border-radius: 50%;
+}
+.container{
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(93, 90, 145);
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+   
+}
+.header{
+    margin-top: 30px;
+    font-size: 70px;
+    color: rgb(231, 138, 154);
+}
+.line{
+    margin-top: 20px;
+    height: 2px;
+    width: 70vw;
+    background-color: rgb(231, 138, 154);
+}
+.phone{
+    color: pink;
+    text-align: center;
+    padding: 30px;
+    font-size: 3vh;
+}
+.text{
+    color: rgb(184, 16, 80);
+    margin: 2em;
+    width: 60vw;
+    font-size: 4vh;
+    font-weight: 800;
+}
+.maps{
+    
+    background-image: url("../../assets/photos/maps.png");
+    width:500px;
+    height: 400px;
+    margin-bottom: 50px;
+}

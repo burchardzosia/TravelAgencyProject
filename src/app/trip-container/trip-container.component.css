@@ -1,0 +1,24 @@
+
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-around;
+    background-image: url(../../assets/photos/background.jpg);
+    
+}
+.info_trip{
+    text-align: center;
+    background-color: red;
+    font-size: 40px;
+    margin-top: 20px;
+    
+
+}
+.info_trip2{
+    background-color: green;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,109 @@
+.opinion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:40px;
+    margin-bottom: 40px;
+}
+.unlike{
+    width:30px;
+    height:26px;
+    background-image: url('../extendFiles/symbols/unlike.png');
+    background-repeat: no-repeat;
+}
+.like{
+    width:30px;
+    height:26px;
+    background-image: url('../extendFiles/symbols/like.png');
+    background-repeat: no-repeat;
+
+}
+.perfectlike{
+    width:30px;
+    height:25px;
+    background-image: url('../extendFiles/symbols/perfect.png');
+    background-repeat: no-repeat;
+
+}
+.text{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 30px;
+    color: yellow;
+}
+.text2{
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: yellow;
+    text-align: center;
+
+
+}
+
+.star {
+    position: relative;
+    
+    display: inline-block;
+    width: 0;
+    height: 0;
+    
+    margin-left: .9em;
+    margin-right: .9em;
+    margin-bottom: 1.2em;
+    
+    border-right:  .3em solid transparent;
+    border-bottom: .7em  solid #FC0;
+    border-left:   .3em solid transparent;
+  
+    font-size: 0.45vw;
+}
+    
+.star:before, .star:after {
+    content: '';
+      
+    display: block;
+    width: 0;
+    height: 0;
+      
+    position: absolute;
+    top: .6em;
+    left: -1em;
+    
+    border-right:  1em solid transparent;
+    border-bottom: .7em  solid #FC0;
+    border-left:   1em solid transparent;
+    
+    transform: rotate(-35deg);
+}
+    
+.star:after {  
+    transform: rotate(35deg);
+}
+.header{
+    color:rgb(68, 147, 244);
+    font-size: 40px;
+    margin-left: 30px;
+}
+.opinia{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    font-size: 20px;
+    margin:30px;
+
+}
+.container{
+    align-items: center;
+}
+.opinionForm{
+    
+    align-items: center;
+    text-align: center;
+}
+.nick{
+    color: red;
+    font-size: 30px;
+}
+.date{
+    font-size: 20px;
+}

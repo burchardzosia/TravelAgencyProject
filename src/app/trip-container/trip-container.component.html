@@ -1,0 +1,6 @@
+
+<div class="container">
+    <app-trip-card *ngFor="let trip of tablicaSerwe" [mini]="mini" [trip]="trip" (min)="low()"[maxi]="maxi" (max)="heigh()"  (remove)="delatetrip(trip)" (sub)="plus(trip)" (getback)="getback(trip)">  </app-trip-card >
+
+</div>
+

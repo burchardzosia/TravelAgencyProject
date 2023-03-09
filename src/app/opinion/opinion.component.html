@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="text">Opinia wycieczki:
+        
+    </div>
+    <div  class="text" *ngIf="opinionCounter==0" >Brak ocen</div>
+    <div class="text" *ngIf="opinionCounter!=0" >
+        <div *ngIf="war>=1" class="star"></div>
+        <div *ngIf="war>=2" class="star"></div> 
+        <div *ngIf="war>=3" class="star"></div> 
+        <div *ngIf="war>=4" class="star"></div> 
+        <div *ngIf="war>=5" class="star"></div> 
+    </div>
+    <div *ngIf="flagstars" class="text2">Oceń:</div>
+    <div>
+    <div *ngIf="flagstars" class="opinion" >
+       
+        <button (click)="function1()" class="star-button1"><i class="star"></i></button>
+        <button (click)="function2()" class="star-button2"><i class="star"></i></button>
+        <button (click)="function3()" class="star-button3"><i class="star"></i></button>
+        <button (click)="function4()" class="star-button4"><i class="star"></i></button>
+        <button (click)="function5()" class="star-button5"><i class="star"></i></button>        
+    </div>
+    <div *ngIf="flagcomment" class="opinionForm">
+        <app-opinion-form (emit)="updateOpinion($event)" ></app-opinion-form>
+    </div>
+    
+    <div class="header">Opinie o tej wycieczce:</div>
+    <div *ngFor="let opinion of opinionTable" >
+        <div class="opinia">
+            <div class="nick">Nick:{{opinion.nick}}</div>
+            <div class="date">Data Zakupu: {{opinion.date}}</div>
+            <div class="opinia">Opinia: {{opinion.opinia}}</div>
+
+        </div>
+        
+    </div>
+</div>
+     

@@ -1,0 +1,42 @@
+
+<div class="main_container">
+  <button class="button" routerLink="/trip" >Powrót</button>
+
+  <div class="container">
+  <div class="header">Juz dziś pojedź z nami!</div>
+  
+  <div class="name">{{Trip.name | uppercase }}</div>
+
+
+  <div class="where">GDZIE?</div>
+      <div class="country"> {{Trip.country }}</div>
+      <div class="date">Termin: {{Trip.startDate}}-{{Trip.endDate}}</div>
+      
+      <div class="cost">
+
+        <span class="prise">{{price | number: '1.0-0' }}{{mark}}</span>
+        <button class="money" (click)="change()">Change </button>
+      </div>
+      <div class="description">{{Trip.description}}</div>
+      <div class="opinion_container">
+        <div class="add-remove">
+            <div class="plus" *ngIf="counter < Trip.max" (click)="addToCart()">ZAREZERWUJ</div>
+            <div *ngIf="counter!=0" class="minus" (click)="RemoveFromCart()">USUŃ REZERWACJE</div>
+
+        </div>
+      </div>
+      <div class="photoselect">
+        <button class="next"(click)="nextPhoto()">N</button>
+        <img class="image" src={{Trip.linkphoto[photos]}}>
+        <button class="next" (click)="previousPhoto()">P</button>
+      </div>
+       
+        
+        
+        <div>
+        <app-opinion [trip]="Trip"></app-opinion>
+    
+        </div>
+  
+  
+</div>
