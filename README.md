@@ -1,10 +1,15 @@
 # Lab5
 ## Used technologies
 -HTML
+
 -CSS
+
 -JavaScript
+
 -Angular
+
 -TypeScript
+
 -Firebase
 
 
