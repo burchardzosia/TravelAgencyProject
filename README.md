@@ -1,4 +1,5 @@
 # Lab5
+This is project for Intrduction to Web Applications. 
 ## Used technologies
 -HTML
 
